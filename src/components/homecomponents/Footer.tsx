@@ -40,7 +40,7 @@ const Footer = () => {
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
-      
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
