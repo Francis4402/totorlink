@@ -1,3 +1,4 @@
+import AllTutors from "@/components/homecomponents/AllTutors";
 import Blogs from "@/components/homecomponents/Blogs";
 import ClassRoomImage from "@/components/homecomponents/ClassRoomImage";
 import ContactSection from "@/components/homecomponents/ContactSection";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div>
         <HeroSection/>
+        <AllTutors/>
       <div className="container mx-auto md:px-0 px-5">
         <PricingSection/>
         <WhyTutorLink/>

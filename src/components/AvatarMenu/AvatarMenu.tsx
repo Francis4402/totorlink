@@ -12,7 +12,6 @@ const AvatarMenu = () => {
 
     const {user, setIsLoading} = useUser();
 
-
     const handleLogout = () => {
         logout();
         setIsLoading(true);
