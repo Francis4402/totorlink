@@ -12,6 +12,7 @@ const AvatarMenu = () => {
 
     const {user, setIsLoading} = useUser();
 
+
     const handleLogout = () => {
         logout();
         setIsLoading(true);
@@ -36,10 +37,10 @@ const AvatarMenu = () => {
                             <Link href="/">Home</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem className="hover:bg-gray-200 duration-200 cursor-pointer">
-                            <Link href="/student/dashboard/profile">Profile</Link>
+                            <Link href={`/${user?.role}/profile`}>Profile</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem className="hover:bg-gray-200 duration-200 cursor-pointer">
-                            <Link href="/student/dashboard">Dashboard</Link>
+                            <Link href={`/${user?.role}/dashboard`}>Dashboard</Link>
                         </DropdownMenuItem>
                         <DropdownMenuSeparator/>
                         <DropdownMenuItem onClick={handleLogout}>
